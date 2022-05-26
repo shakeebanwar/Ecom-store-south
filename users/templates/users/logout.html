@@ -1,0 +1,44 @@
+{% extends "ecommerce_app/base1.html" %}
+{% block content %}
+{% if user.is_authenticated %}
+<main id="main" class="main-page">
+        <section id="speakers-details" class="wow fadeIn ">
+            <div class="container">
+              <div class="section-header">
+                <h2>Successfully Logout</h2>
+              </div>
+        <div class="container">
+            <div class="row">
+<div class="alert alert-info m-3">
+        <h2>Logged Out</h2>
+        <p>You have been Successfully Logged Out</p>
+
+</div>
+<div class="border-top pt-3 m-3">
+            <small class="text-muted">
+             <a href="{% url 'login'%}">Log In Now</a>
+            </small>
+        </div>
+</div>
+             </div>
+
+{% else %}
+
+<section class="wow fadeIn mt-5 p-5 ">
+    <div class="container">
+<div class="alert alert-info mt-5 ml-5 d-flex justify-content-center w-75">
+          You are not logged in
+        </div>
+<div class="border-top pt-3 m-3">
+            <small class="text-muted">
+             <a href="{% url 'login'%}">Log In Now</a>
+            </small>
+
+</div>
+
+    </div>
+
+</section>
+</main>
+{% endif %}
+{% endblock content %}

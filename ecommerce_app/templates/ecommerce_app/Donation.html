@@ -1,0 +1,61 @@
+{% extends "ecommerce_app/base1.html" %}
+{% load static %}
+{% block title %}
+    Donation |
+{% endblock %}
+
+
+{% block content %}
+
+ <main id="main" class="main-page">
+
+    <!--==========================
+      Speaker Details Section
+    ============================-->
+    <section id="speakers-details" class="wow fadeIn">
+      <div class="container">
+        <div class="section-header">
+          <h2>Donation</h2>
+         <p>Hosted by @msPaith:</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <img src="{% static 'ecommerce_app/img/photos-1.jpg' %}" alt="schedule" class="img-fluid" style="height:fit-content; width:auto">
+          </div>
+
+          <div class="col-md-6">
+            <div class="details">
+                  <div class="section-header">
+                    <h2>Donate</h2>
+                  </div>
+                  <div class="donation-container">
+                    <div class="donation-box">
+                        <div class="title">Donation Information</div>
+                        <form action="" method="post">
+                            {% csrf_token %}
+
+                        <div class="fields">
+                            <input type="text" name="name" placeholder="Name" required> </input>
+                            <input type="email" name="email" placeholder="Email" required> </input>
+                            <input type="number" name="postaladdress" placeholder="Postal Code" required> </input>
+                        </div>
+
+                        <div class="amount">
+
+                        <div class="button">$<input type="number" class="set-amount" placeholder="" name="amount" min="1"></div>
+                        </div>
+                        <div class="confirm">
+
+                        </div>
+
+                        <div class="donate-button">
+                        <input class="fa fa-credit-card" type="submit" value="Donate Now" >
+                    </div>
+                        </form>
+                </div>
+              </div>
+            </section>
+</main>
+
+    {% endblock content %}

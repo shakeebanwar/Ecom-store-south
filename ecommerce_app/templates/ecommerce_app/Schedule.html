@@ -1,0 +1,164 @@
+{% extends "ecommerce_app/base1.html" %}
+{% load static %}
+{% block title %}
+    Schedule |
+{% endblock %}
+
+
+{% block content %}
+
+<div class="mt-5">
+    <!--==========================
+      Speaker Details Section
+    ============================-->
+    <section id="speakers-details" class="wow fadeIn">
+      <div class="container">
+        <div class="section-header">
+          <h2>Schedule</h2>
+         <p>Hosted by @msPaith:</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <img src="{% static 'ecommerce_app/img/photos-1.jpg' %}" alt="schedule" class="img-fluid" style="height:fit-content; width:auto">
+          </div>
+
+
+          <div class="col-md-6">
+            <div class="details">
+              <section id="schedule" class="section-with-bg">
+                  <div class="section-header">
+                    <h2 style="margin-top:0%">Event Schedule</h2>
+                    <p>Here is our event schedule</p>
+                  </div>
+
+                  <ul class="nav nav-tabs" role="tablist" style="margin-top: 0%;">
+                    <li class="nav-item" style="padding: 1%; margin-bottom: 2px;" >
+                      <a class="nav-link active" href="#day-1" role="tab" data-toggle="tab">Day 1</a>
+                    </li>
+                    <li class="nav-item"style="padding: 1%; margin-bottom: 2px;" >
+                      <a class="nav-link" href="#day-2" role="tab" data-toggle="tab">Day 2</a>
+                    </li>
+                    <li class="nav-item"style="padding: 1%; margin-bottom: 2px;" >
+                      <a class="nav-link" href="#day-3" role="tab" data-toggle="tab">Day 3</a>
+                    </li>
+                  </ul>
+
+                  <h3 class="sub-heading">2 Day Saturday/Sunday Event in Minneapolis Minnesota </h3>
+
+                  <div class="tab-content row justify-content-center">
+
+                    <!-- Schdule Day 1 -->
+                    <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
+
+                      <div class="row schedule-item">
+                        <div class="col-md-2"><time>8pm-11pm</time></div>
+                        <div class="col-md-10">
+                          <h4>Friday July 8, 2022</h4>
+                          <h5>Welcoming</h5>
+                          <p>Date & Time: Friday, July 8, 2022 8pm-11pm</p>
+                          <p>Location 1: Top Golf 6420 Camden Ave N Brooklyn Center. MN 55430 <br>
+                            Location 2: Graze | Provisions + Libations 520 N 4th St, Minneapolis, MN 55401
+                            Final Location TBD
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Schdule Day 1 -->
+                    <!-- Schdule Day 2 -->
+                    <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-2">
+
+                      <div class="row schedule-item">
+                        <div class="col-md-2"><time>12pm-3pm</time></div>
+                        <div class="col-md-10">
+                          <h4>Saturday, July 9, 2022  </h4>
+                          <h5>Workshop</h5>
+                          <p>Location: The Thinking Spot Date & Time: Saturday, July 9, 2022 | 10am-3pm<br>
+                            king Spot 3311 County Road 101, Suite #4, Wayzata, MN 55391<br>
+                            Workshop Schedule to be sent attendees
+                            </p>
+                        </div>
+                      </div>
+
+                      <div class="row schedule-item">
+                        <div class="col-md-2"><time>4:30pm-9pm </time></div>
+                        <div class="col-md-10">
+                          <h4>Independence Network Soiree</h4>
+                          <p>Date & Time: Saturday, July 9, 2022 | 4:30pm-9pm  <br>
+                            Location: Oro Lounge 2875 Brookdale Dr. Brooklyn Park MN 55444<br>
+                            Seminar Schedule to be sent to attendees.
+
+
+                
+                            </p>
+                        </div>
+                      </div>
+
+                      <div class="row schedule-item">
+                        <div class="col-md-2"><time>9pm-2am</time></div>
+                        <div class="col-md-10">
+                          <h4>Independence Celebration</h4>
+                          <p>Date & Time: Saturday, July 9, 2022 | 9pm-2am <br>
+                            Location: Oro Lounge 2875 Brookdale Dr. Brooklyn Park MN 55444
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- End Schdule Day 2 -->
+
+                    <!-- Schdule Day 3 -->
+                    <div role="tabpanel" class="col-lg-9 tab-pane fade show" id="day-3">
+          
+                        <div class="row schedule-item">
+                          <div class="col-md-2"><time>10am-12pm</time></div>
+                          <div class="col-md-10">
+                            <h5>Sunday July 10, 2022</h4>
+                            <h4>Volunteering </h5>
+                            <p>Time: | 10:00 AM - 12:00 PM</p>
+
+                         <h4>Networking Boat Brunch</h4>
+                         <p> Date & Time: Sunday, July 10, 2022 | 1:00 PM - 4:00 PM <br>
+                         Al & Alma’s Supper Club and Charter Cruises 5201 Piper Road Mound, Minnesota 55364
+                         
+                        </p>
+                          </div>
+                        </div>
+                  </div>
+          
+                </div>
+
+            
+
+          
+        </div>
+      </div>
+
+    </section>
+</main>
+      <!--==========================
+      Subscribe Section
+    ============================-->
+    <section id="subscribe">
+        <div class="container wow fadeInUp">
+          <div class="section-header">
+            <h2>Newsletter</h2>
+            <p>For Receiving regular updates subscribe to the Newsletter</p>
+          </div>
+  
+            <div class="form-row justify-content-center">
+              <div class="col-auto">
+                <input type="text" class="form-control" placeholder="Enter your Email">
+              </div>
+              <div class="col-auto">
+                <button type="submit">Subscribe</button>
+              </div>
+            </div>
+  
+        </div>
+      </section>
+
+
+</div>
+
+    {% endblock content %}

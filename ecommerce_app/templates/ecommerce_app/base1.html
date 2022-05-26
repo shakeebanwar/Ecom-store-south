@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+  <meta charset="utf-8">
+  <title>NileBrand</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="{% static 'ecommerce_app/img/logo.png' %}" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="{% static 'ecommerce_app/lib/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="{% static 'ecommerce_app/lib/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+  <link href="{% static 'ecommerce_app/lib/animate/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'ecommerce_app/lib/venobox/venobox.css' %}" rel="stylesheet">
+  <link href="{% static 'ecommerce_app/lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="{% static 'ecommerce_app/css/style.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header" class="header-fixed">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
+        <a href="{% url 'index'%}" class="scrollto"><img src="{% static 'ecommerce_app/img/logo.png' %}" alt="" title=""></a>
+      </div>
+
+ <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="{% url 'index' %}">Home</a></li>
+          <li><a href="{% url 'product'%}">Products</a></li>
+          <li><a href="{% url 'about'%}">About</a></li>
+          <li><a href="{% url 'schedule'%}">Schedule</a></li>
+          <li><a href="{% url 'speakers'%}">Speakers</a></li>
+          <li><a href="{% url 'donation'%}">Donation</a></li>
+          <li><a href="{% url 'founder'%}">Founder</a></li>
+        <li class="buy-tickets"><a href="{% url 'purchaseticket'%}">Buy Tickets</a></li>
+          {% if user.is_authenticated %}
+
+          <li class="buy-tickets"><a href="{% url 'logout'%}">Logout</a></li>
+          {% else %}
+          <li class="buy-tickets"><a href="{% url 'login'%}">Login</a></li>
+          {%endif%}
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+
+
+
+{% block content %}
+
+
+
+
+
+
+
+{% endblock %}
+
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <img src="{% static 'ecommerce_app/img/logo.png' %}" alt="NileBrand">
+            <p>(The) Nile Brand service is focused on providing products from Africans that are
+              both based in the USA and in African countries. Their goal is not to just provide
+              products but to educate people on Africa and its history.</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="fa fa-angle-right"></i> <a href="{% url 'index' %}">Home</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="{% url 'about' %}">About us</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="{% url 'speakers' %}">Sponsers</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="{% url 'about' %}">Terms of service</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="{% url 'about' %}">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="fa fa-angle-right"></i> <a href="{% url 'index' %}">Introduction</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="{% url 'schedule' %}">Schedule</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="{% url 'donation'%}">Donation</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="{% url 'login'%}">Contact</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="{% url 'speakers' %}">Speakers</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Address</h4>
+            <p>
+              <strong>Location:</strong> Oro Lounge 2875 Brookdale Dr Brookdale Park MN 55444 <br>
+              <strong>Day</strong> Saturday<br>
+              <strong>Time</strong> 6:00PM To 2:00AM <br>
+            </p>
+
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>NileBrand</strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="{% static 'ecommerce_app/lib/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'ecommerce_app/lib/jquery/jquery-migrate.min.js' %}"></script>
+  <script src="{% static 'ecommerce_app/lib/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'ecommerce_app/lib/easing/easing.min.js' %}"></script>
+  <script src="{% static 'ecommerce_app/lib/superfish/hoverIntent.js' %}"></script>
+  <script src="{% static 'ecommerce_app/lib/superfish/superfish.min.js' %}"></script>
+  <script src="{% static 'ecommerce_app/lib/wow/wow.min.js' %}"></script>
+  <script src="{% static 'ecommerce_app/lib/venobox/venobox.min.js' %}"></script>
+  <script src="{% static 'ecommerce_app/lib/owlcarousel/owl.carousel.min.js' %}"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="{% static 'ecommerce_app/contactform/contactform.js' %}"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="{% static 'ecommerce_app/js/main.js' %}"></script>
+</body>
+
+</html>

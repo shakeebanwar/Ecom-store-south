@@ -1,0 +1,53 @@
+{% extends "ecommerce_app/base1.html" %}
+
+{% block title %}
+    {{ product.name }} |
+{% endblock %}
+
+
+{% block content %}
+<main id="main" class="main-page">
+  <section id="speakers-details" class="wow fadeIn">
+    <div class="container">
+
+    <div class="container">
+        <div class="row">
+
+            <p><a href="{% url 'purchaseticket' %}">All Products </a> &gt;
+                {{ product.name }}
+            </p>
+            </div>
+    </div>
+
+
+    <div>
+
+        <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Product Name</th>
+      <th scope="col">Product Price</th>
+    </tr>
+  </thead>
+    <tr>
+      <th scope="row">{{ product.name }}</th>
+      <td>${{ product.price }}</td>
+
+         <form action="{% url 'product_detail' product.id product.slug %}" method="post">
+                    {% csrf_token %}
+
+                    {{ form }}
+                    <td><input type="submit" value="Add to cart" class="btn btn-primary" ></td>
+
+            </form>
+    </tr>
+        </table>
+      </div>
+    </div>
+    </section>
+</main>
+
+
+
+
+{% endblock %}

@@ -1,0 +1,81 @@
+{% extends "ecommerce_app/base1.html" %}
+{% load static %}
+{% block title %}
+    Founder |
+{% endblock %}
+
+
+{% block content %}
+  <main id="main" class="main-page">
+
+    <!--==========================
+      Speaker Details Section
+    ============================-->
+    <section id="speakers-details" class="wow fadeIn">
+      <div class="container">
+        <div class="section-header">
+          <h2>Meet The Founder</h2>
+         <p>Paith Philemon — South Sudanese AI/ML Developer, Creator, Model and Entrepreneur</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <img src="{% static 'ecommerce_app/img/speaker.jpg' %}" alt="Speaker" class="img-fluid" style="height:fit-content; width:auto">
+          </div>
+
+          <div class="col-md-6">
+            <div class="details">
+              <h2 style="margin-top: 30px; margin-bottom: 20px;">Paith Philemon</h2>
+              <div class="social">
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-google-plus"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+              </div>
+              <p>With a background in Computer Science, years in STEM, Healthcare Technology, and Professional positions, Paith Philemon founded this event to equip South Sudanese Men & women to become successful holistically and celebrate East African business and entrepreneurship. Backed with her corporate career, higher academia and teaching, the Nile Brand aims to celebrate, curate and educate in the areas of development entrepreneurship, economic empowerment and ROSS awareness. </p>
+              <h2>The NileBrand</h2>
+              <p>(The) Nile Brand service is focused on providing products from Africans that are 
+                both based in the USA and in African countries. Their goal is not to just provide 
+                products but to educate people on Africa and its history. We are coming to a critical moment as the generations grow they are likely to have less and less knowledge of their roots, where they come from and what the culture of their parents 
+                and their parents meant. Education is needed and The Nile Box subscription 
+                raises awareness and re-establish connection amongst some of the African diaspora.</p>
+                <h2>The Nile Box</h2>
+                <p>A subscription business with recurring revenue model in which customers pay a 
+                  weekly, monthly, or yearly fee in exchange for east African products or services. 
+                  Customers can renew their subscription after a certain period of time. Our Product will be a selection of current established businesses that market East African 
+                  products Apparel, books, jewelry, body butter, masks, notebook, pens.</p>
+
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+      <!--==========================
+      Subscribe Section
+    ============================-->
+    <section id="subscribe">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h2>Newsletter</h2>
+          <p>For Receiving regular updates subscribe to the Newsletter</p>
+        </div>
+
+          <div class="form-row justify-content-center">
+            <div class="col-auto">
+              <input type="text" class="form-control" placeholder="Enter your Email">
+            </div>
+            <div class="col-auto">
+              <button type="submit">Subscribe</button>
+            </div>
+          </div>
+
+      </div>
+    </section>
+
+
+
+    {% endblock content %}

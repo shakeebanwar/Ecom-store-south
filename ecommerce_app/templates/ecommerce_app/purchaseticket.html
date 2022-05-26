@@ -1,0 +1,128 @@
+{% extends "ecommerce_app/base1.html" %}
+{% load static %}
+{% block title %}
+    About |
+{% endblock %}
+
+
+{% block content %}
+  <main id="main" class="main-page">
+
+     <!--==========================
+      Buy Ticket Section
+    ============================-->
+    <section id="buy-tickets" class="section-with-bg wow fadeInUp" style="margin: 0 auto">
+        <div class="container">
+  
+          <div class="section-header">
+            <h2>Purchase your Tickets</h2>
+            <p>ALL TICKET SALES ARE FINAL, NO REFUNDS!!</p>
+          </div>
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="card mb-5 mb-lg-0">
+                <div class="card-body">
+                  <h5 class="card-title text-muted text-uppercase text-center">{{ all_products.0.name }}</h5>
+                  <h6 class="card-price text-center">${{ all_products.0.price }}</h6>
+                  <hr>
+                  <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fa fa-check"></i></span>Flyer</li>
+                    <li><span class="fa-li"><i class="fa fa-check"></i></span>Invitation for Event</li>
+                    <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Soiree Network Ticket</li>
+                    <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Two-Day Network Ticket</li>
+                    
+                    
+  
+                  </ul>
+                  <hr>
+                  <div class="text-center">
+                    <a href="{% url 'product_detail' 1 'item-1' %}" type="button" class="btn"  >PREORDER</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Pro Tier -->
+            <div class="col-lg-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title text-muted text-uppercase text-center">{{ all_products.1.name }}</h5>
+                  <h6 class="card-price text-center">${{ all_products.1.price }}</h6>
+                  <hr>
+                  <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fa fa-check"></i></span>One-Day Soiree Network Ticket</li>
+                    <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Friday</li>
+                    <li><span class="fa-li"><i class="fa fa-check"></i></span>Saturday</li>
+                    <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Sunday</li>
+                  </ul>
+                  <hr>
+                  <div class="text-center">
+                   <a href="{% url 'product_detail' 2 'item-2' %}" type="button" class="btn"  >PREORDER</a>
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+           
+          </div>
+  
+        </div>
+  
+        <!-- Modal Order Form -->
+        <div id="buy-ticket-modal" class="modal fade">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Buy Tickets</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form method="POST" action="#">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="your-name" placeholder="Your Name">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="your-email" placeholder="Your Email">
+                  </div>
+                  <div class="form-group">
+                    <select id="ticket-type" name="ticket-type" class="form-control" >
+                      <option value="">-- Select Your Ticket Type --</option>
+                      <option value="standard-access">Flyer</option>
+                      <option value="pro-access">Regular ticket</option>
+                      <option value="premium-access">Vip Ticket</option>
+                    </select>
+                  </div>
+                  <div class="text-center">
+                    <button type="submit" class="btn">Buy Now</button>
+                  </div>
+                </form>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+  
+      </section>
+        <!--==========================
+      Subscribe Section
+    ============================-->
+    <section id="subscribe">
+        <div class="container wow fadeInUp">
+          <div class="section-header">
+            <h2>Newsletter</h2>
+            <p>For Receiving regular updates subscribe to the Newsletter</p>
+          </div>
+  
+            <div class="form-row justify-content-center">
+              <div class="col-auto">
+                <input type="text" class="form-control" placeholder="Enter your Email">
+              </div>
+              <div class="col-auto">
+                <button type="submit">Subscribe</button>
+              </div>
+          </form>
+  
+        </div>
+      </section>
+  
+    {% endblock content %}
