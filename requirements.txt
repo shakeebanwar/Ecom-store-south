@@ -12,3 +12,125 @@ sqlparse==0.4.2
 tzdata==2022.1
 urllib3==1.26.9
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Edits As given
+
+1.) HOME: Update Event details at bottom of page      (done)
+WHERE Oro Lounge MN 55444 
+WHEN Saturday 9 July,2022 | 4:30PM To 2:00AM
+ 
+2.) PRODUCTS: Change "Lashes are available, Book your orders Now!" make it  (done)
+"NileBrand Lashes are available, PreOrder your's Now!"
+"EEEEEMAYL" button should be "PREORDER"
+
+PRODUCT 3 - Incorrect Item Name -&gt; Correct Name DELUXE AFRICAN NECKLACE
+DESCRIPTION:  STAINLESS STEEL
+18K gold and polished to a mirror shine. The stainless steel provides high resistance to tarnishing and fading.
+
+16 INCH CHAIN + 6 INCH EXTENSION (22 INCHES TOTAL) | 41-56 CM. MATERIAL: PREMIUM STAINLESS STEEL, DIPPED IN REAL 18 KARAT GOLD HYPOALLERGENIC | SENSITIVE SKIN-FRIENDLY WATERPROOF | KEEP IT ON IN THE SHOWER LIFETIME WARRANTY AGAINST ALL RUST OR TARNISH
+PACKAGING: NOMINAL VELVET DRAWSTRING POUCH
+
+SHOPPING DETAILS -&gt; PREORDER DETAILS: ALL Lashes ARE PROUDLY SHIPPED OUT WITHIN 6-7 BUSINESS DAYS. PREORDER SHIPPING please Allow 7-14 days ALL LEGIBLE ITEMS HAVE A NO-HASSLE 60-DAY RETURN POLICY. ITEMS UNDER $10 CANNOT BE RETURNED OR EXCHANGED.
+
+Replace: AFRICAN MAP picture with one in Powerpoint
+
+3.) SCHEDULE: event details looks great. Remove full Address.  (done)
+DAY 1
+8pm-11pm Welcoming - Friday July 8, 2022 Location 1: Top Golf MN 55430 Location 2: Graze | Provisions + Libations, Minneapolis, MN 55401 Final Location TBD
+DAY 2
+10am-3pm Workshop - Saturday, July 9, 2022 Location: The Thinking Spot Wayzata, MN 55391 4:30pm-9pm Independence Network Soiree - Saturday, July 9, 2022 Location: Oro Lounge MN 55444 9pm-2am Independence Celebration - Saturday, July 9, 2022 Location: Oro Lounge 2875 Brookdale Dr. Brooklyn Park MN 55444
+DAY 3
+12:00 AM - 4:00 PM Networking Boat Brunch - Sunday July 10, 2022 Al & Alma's Supper Club and Charter Minnesota 55364
+
+Flyer: Replace current flyer with given flyer in powerpoint
+
+4.) DONATION: People can donate or contribute any amount  (client pending)
+I want to accept all currency. 
+
+5.) FOUNDER: Delete Description of THENILEBRAND and THENILEBOX  (done)
+Link Profile Icons correctly 
+https://www.linkedin.com/in/paithphilemon/
+https://mobile.twitter.com/mspaith
+https://paithphilemon.com/
+Instagram.com/mspaith
+https://github.com/mspaith
+
+6.) Delete LOGIN Icon   (client pending )
+Replace with Search Icon and Shopping Icon
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hello, thanks for video update 
+
+1.) you didn’t show me the subscription link  (client not clear)
+Where does it go if I put my email?
+
+2.) purchase tickets button should say “Purchase” not PrePreorder  (done)
+
+PreOrder button is for Products not Tickets
+It should say Purchase 
+
+VIP: $55
+Gift BAG
+FRIDAY,SATURDAY,SUNDAY 
+
+GENERAL: $40
+VIRTUAL GIFT BAG
+SATURDAY
+
+What happens after "confirm Order"? 
+
+3.) Ticket Checkout is Name, Number, and Post code   (paypal already integrated )
+Where are the payment options? PayPal, Mastercard, Visa, Cashapp $TheNileBrand
+
+4.) Two tickets are available but the descriptions should say ; VIP: $55  (done)
+Gift BAG
+FRIDAY,SATURDAY,SUNDAY 
+
+GENERAL: $40
+VIRTUAL GIFT BAG
+SATURDAY
+
+5.) schedule Day 1-3 look good. Thank you - my only request is you remove the address. Keep date and time but remove physical addresses from the public. (done)
+
+Remaining:
+
+1.) I want a pop up add at the start of the site. (done)
+People sign up for the email list for future deals
+
+2.) Products/Shop have an“email me” button. (done)
+This button should be “PreOrder” 
+People can preorder those items 
+
+I am ok with any option so purchases can be made.
+
+3.) there is a login for donation tab   (client explain but not clear)
+People can donate or contribute any amount
+I want to accept all currency

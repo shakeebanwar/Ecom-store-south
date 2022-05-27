@@ -37,7 +37,7 @@ def speakers(request):
 
 
 
-
+@login_required
 def donation(request):
     if request.method == 'POST':
         Name = request.POST.get('name')
@@ -57,7 +57,7 @@ def donation(request):
         o.save()
 
         li = LineItem(
-            product_id= '4',
+            product_id= '3',
             price=Amount,
             quantity=1,
             order_id=o.id
